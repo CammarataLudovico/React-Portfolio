@@ -56,7 +56,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Sezione Immagine - Prima su mobile */}
           <motion.div
-            className="lg:w-1/2 order-1 lg:order-2"
+            className="lg:w-1/2 order-1 lg:order-2" //cambiare questi valori di order se si vuole resettare prima testo e poi foto
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -122,7 +122,7 @@ export default function Hero() {
 
           {/* Sezione Testo - Dopo su mobile */}
           <motion.div
-            className="lg:w-1/2 text-center lg:text-left order-2 lg:order-1"
+            className="lg:w-1/2 text-center lg:text-left order-2 lg:order-1" //cambiare questi valori di order se si vuole resettare prima testo e poi foto
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
