@@ -23,10 +23,10 @@ const CodePattern = () => (
 )
 
 const images = [
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ginger_european_cat.jpg/220px-Ginger_european_cat.jpg",
-  "https://img.freepik.com/foto-gratuito/primo-piano-verticale-del-fuoco-selettivo-di-un-gatto-grigio-britannico-a-pelo-corto_181624-51731.jpg",
-  "https://www.animalidacompagnia.it/wp-content/uploads/2018/04/maine-coon-verticale.jpg",
-  "https://www.animalidacompagnia.it/wp-content/uploads/2018/04/sacro-di-birmania-verticale.jpg",
+  "/Gatti/Gatto1.jpg",
+  "/Gatti/Gatto2.avif",
+  "/Gatti/Gatto3.jpg",
+  "/Gatti/Gatto4.jpg",
 ]
 
 export default function Hero() {
