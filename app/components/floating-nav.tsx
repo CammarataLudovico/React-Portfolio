@@ -5,12 +5,12 @@ import { motion } from "framer-motion"
 
 const sections = [
   { id: "hero", label: "Home" },
-  { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
+  { id: "about", label: "Biografia" },
+  /*{ id: "experience", label: "Experience" },*/
   { id: "skills", label: "Skills" },
-  { id: "services", label: "Services" },
-  { id: "education", label: "Education" },
-  { id: "contact", label: "Contact" },
+  // { id: "services", label: "Services" },
+  { id: "education", label: "Formazione" },
+  { id: "contact", label: "Contatti" },
 ]
 
 export default function FloatingNav() {

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Database, Server, Layout, GitBranch, Terminal, Layers, Cpu, Globe, Workflow } from "lucide-react"
+import { Code, Database, Server, Cuboid, ChartSpline, PaintRoller, Users, Layout, GitBranch, Terminal, Layers, Cpu, Globe, Workflow } from "lucide-react"
 import AnimatedSectionHeader from "./AnimatedSectionHeader"
 
 const SkillIcon = ({ icon: Icon, color }: { icon: any; color: string }) => (
@@ -11,6 +11,90 @@ const SkillIcon = ({ icon: Icon, color }: { icon: any; color: string }) => (
 )
 
 const skills = [
+    {
+      icon: Code,
+      name: "Sviluppo Frontend",
+      tech: "HTML, CSS, JavaScript, React.js",
+      description:
+        "Creazione di interfacce utente reattive e interattive per un'esperienza utente ottimale.",
+      color: "text-blue-500",
+    },
+    /*{
+      icon: Code,
+      name: "Sviluppo Backend",
+      tech: "Node.js, Express, Fastify",
+      description:
+        "Progettazione di applicazioni server-side scalabili e robuste con un'architettura pulita.",
+      color: "text-green-500",
+    },*/
+    {
+      icon: Layout,
+      name: "UI/UX Design",
+      tech: "Figma, Material UI, Tailwind CSS",
+      description:
+        "Progettazione di interfacce utente intuitive e responsive con un focus sull'estetica e l'usabilità.",
+      color: "text-pink-500",
+    },
+    {
+      icon: Users,
+      name: "Personas & User Research",
+      tech: "Miro",
+      description:
+        "Creazione di personas utente e brainstorming collaborativo per un design centrato sull'utente.",
+      color: "text-cyan-500",
+    },
+    {
+      icon: Database,
+      name: "Gestione Database",
+      tech: "MySQL, SQL, MS Access",
+      description:
+        "Gestione e ottimizzazione di database con MySQL e SQL per prestazioni elevate e retrieval dei dati.",
+      color: "text-purple-500",
+    },
+    {
+      icon: Terminal,
+      name: "Containerization",
+      tech: "Docker",
+      description:
+        "Creazione di ambienti di sviluppo e produzione consistenti tramite Docker.",
+      color: "text-teal-500",
+    },
+    {
+      icon: GitBranch,
+      name: "Version Control",
+      tech: "Git, GitHub",
+      description: "Gestione del codice e collaborazione tramite versionamento con Git e GitHub.",
+      color: "text-orange-500",
+    },
+    {
+      icon: Server,
+      name: "Gestione Server",
+      tech: "Virtual Machine Windows, Active Directory",
+      description:
+        "Gestione di macchine virtuali e configurazione di Active Directory in ambienti aziendali.",
+      color: "text-red-500",
+    },  
+    {
+      icon: Cuboid,
+      name: "CAD Design",
+      tech: "Fusion 360",
+      description:
+        "Progettazione di modelli 3D e prototipi per progetti ingegneristici con Fusion 360.",
+      color: "text-orange-500",
+    },
+    {
+      icon: ChartSpline,
+      name: "Machine Learning",
+      tech: "PyTorch, TensorFlow, Kaggle",
+      description:
+        "Sviluppo di modelli di machine learning per analisi predittive e data processing.",
+      color: "text-indigo-500",
+    },
+  // Altri skills
+]
+
+
+/*const skills = [
   {
     icon: Code,
     name: "Frontend Development",
@@ -82,7 +166,7 @@ const skills = [
     description: "Working efficiently in agile environments with focus on continuous delivery.",
     color: "text-cyan-500",
   },
-]
+]*/
 
 export default function Skills() {
   return (
@@ -104,7 +188,7 @@ export default function Skills() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <AnimatedSectionHeader title="Skills & Expertise" />
+        <AnimatedSectionHeader title="Skills Tecniche" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <motion.div
