@@ -6,6 +6,7 @@ import Services from "./components/Services"
 import Education from "./components/Education"
 import Contact from "./components/Contact"
 import FloatingNav from "./components/floating-nav"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
