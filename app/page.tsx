@@ -7,6 +7,7 @@ import Education from "./components/Education"
 import Contact from "./components/Contact"
 import FloatingNav from "./components/floating-nav"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       {/* <Services /> */}
       <Contact />
       <SpeedInsights />
+      <Analytics />
     </main>
   )
 }
