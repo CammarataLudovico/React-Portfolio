@@ -7,9 +7,9 @@ const sections = [
   { id: "hero", label: "Home" },
   { id: "about", label: "Biografia" },
   /*{ id: "experience", label: "Experience" },*/
-  { id: "skills", label: "Skills" },
   // { id: "services", label: "Services" },
   { id: "education", label: "Formazione" },
+  { id: "skills", label: "Skills" },
   { id: "contact", label: "Contatti" },
 ]
 

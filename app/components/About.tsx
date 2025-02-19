@@ -46,21 +46,24 @@ export default function About() {
           </p>
         </motion.div>
 
-          <motion.div
-            className="md:w-1/2 grid grid-cols-2 gap-6"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            {skills.map((skill, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                {skill.icon}
-                <h3 className="text-xl font-semibold mt-4 mb-2 dark:text-white">{skill.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{skill.description}</p>
-              </div>
-            ))}
-          </motion.div>
+        <motion.div
+          className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          {skills.map((skill, index) => (
+            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+              {skill.icon}
+              <h3 className="text-xl font-semibold mt-4 mb-2 dark:text-white">
+                {skill.title}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">{skill.description}</p>
+            </div>
+          ))}
+        </motion.div>
+
         </div>
       </div>
       <div className="absolute bottom-0 right-0 w-64 h-64 -mb-32 -mr-32 opacity-20">
