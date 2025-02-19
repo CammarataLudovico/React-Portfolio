@@ -98,7 +98,7 @@ export default function Hero() {
                       alt={`Ludovico Cammarata photo ${currentImage + 1}`}
                       fill
                       className="object-cover rounded-2xl shadow-2xl"
-                      priority
+                      priority={currentImage === 0}
                     />
                   </motion.div>
                 </motion.div>
