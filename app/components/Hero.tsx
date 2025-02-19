@@ -23,10 +23,10 @@ const CodePattern = () => (
 )
 
 const images = [
-  "/Gatti/Gatto1.jpg",
-  "/Gatti/Gatto2.jpg",
-  "/Gatti/Gatto3.jpg",
-  "/Gatti/Gatto4.jpg",
+  "/Gatti/Gatto1.webp",
+  "/Gatti/Gatto2.webp",
+  "/Gatti/Gatto3.webp",
+  "/Gatti/Gatto4.webp",
 ]
 
 export default function Hero() {
