@@ -24,7 +24,7 @@ const CodePattern = () => (
 
 const images = [
   "/Gatti/Gatto1.jpg",
-  "/Gatti/Gatto2.avif",
+  "/Gatti/Gatto2.jpg",
   "/Gatti/Gatto3.jpg",
   "/Gatti/Gatto4.jpg",
 ]
